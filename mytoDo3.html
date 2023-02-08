@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO2My</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="todo-app-ver.2.0.js" defer></script>
+</head>
+<body>
+    <nav class="container nav">
+       <a class="" href="mytoDo3.html" style="margin-right: 30px;">Мои дела</a>
+       <a class="" href="momtoDo3.html" style="margin-right: 30px;">Дела Мамы</a>
+       <a class="" href="dadtoDo3.html">Дела Папы</a>
+    </nav>
+    <div class="container" id="todoList"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            createToDoApp(document.getElementById('todoList'), 'Мои дела', 'me', {name: 'Выучить JS', done: true}, {name: 'Выучить английский', done: false});
+        })
+    </script>
+</body>
+</html>
